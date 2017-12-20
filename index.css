@@ -1,0 +1,86 @@
+#page {
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    position: relative;
+}
+
+/* Styling for navigation bar */
+
+.nav-wrapper {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+#mobile-demo {
+    background-color: black;
+}
+
+.nav-wrapper ul li a {
+    color: white;
+}
+
+/* Styling for home */
+
+#home {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15vh;
+    background-image: url('./pictures/piggy.jpg');
+    background-size: cover;
+    height: 93.5vh;
+    width: 100%;
+    position: relative;
+}
+
+#scroll-down {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+/* Styling for content */
+
+#content {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.rotate {
+    -moz-transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.rotate.down {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
