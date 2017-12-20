@@ -15,7 +15,7 @@
 }
 
 #mobile-demo {
-    background-color: black;
+    background-color: #313131;
 }
 
 .nav-wrapper ul li a {
@@ -67,7 +67,7 @@
 #content {
     position: relative;
     height: 100vh;
-    width: 50%;
+    width: 75%;
     margin: auto;
     padding-top: 5%;
 }
@@ -83,4 +83,12 @@
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+p {
+    text-indent: 25px;
+}
+
+.collapsible-header, .collapsible-body {
+    font-size: 1.5em;
 }
