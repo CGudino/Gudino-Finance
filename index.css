@@ -66,7 +66,7 @@
 
 #content {
     position: relative;
-    height: 100vh;
+    min-height: 50vh;
     width: 75%;
     margin: auto;
     padding-top: 5%;
@@ -91,4 +91,12 @@ p {
 
 .collapsible-header, .collapsible-body {
     font-size: 1.5em;
+}
+
+#footer {
+    text-align: center;
+    font-size: 2em;
+    padding: 10% 0;
+    width: 50%;
+    margin: auto;
 }
